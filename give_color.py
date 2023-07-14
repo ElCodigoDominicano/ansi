@@ -7,7 +7,6 @@ Data: 07/11/2023"""
 
 from dataclasses import dataclass
 from .ansi_colors import AnsiColors
-from typing import Any, Self
 
 @dataclass
 class AnsiTools(AnsiColors):
@@ -38,9 +37,6 @@ class AnsiTools(AnsiColors):
         """
         for key in self.list_available_colors():
             print(self.__dict__[key] + key + self.END_COLOR)
-    
-    def add_ornament(self, astring) -> str:
-        return f"|_-~>{astring}<~-_|"
     
     def to_this_string(self, color: str, astring: str) -> str:
         """Returns a given string with added color
