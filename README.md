@@ -1,4 +1,6 @@
 # ansi
-A python library containing 100s of ANSI colour escape sequences, with tools to give strings color.
-Give strings found in 1. dictionaries, 2. lists, 3. sets and 4. tuples color, 
-Add custom foreground/background colors using Red Green and Blue values 0-255.
+
+A python library containing 100s of ANSI colour escape sequences and shades of
+various colours, with tools to give strings color. Give strings found in dictionaries,
+lists, sets and tuples colour, add custom foreground/background colours using 
+Red Green and Blue values 0-255. and more! give your outputs the colour it needs!
