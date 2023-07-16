@@ -1,2 +1,4 @@
 # ansi
-100s of ANSI color escape sequences in a python dataclass, with tools to give strings, keys and values in a dictionary color and custom foreground and background color functions
+python modules containing 100s of ANSI color escape sequences, with tools to give strings color,
+strings found in python dictionaries, lists, sets and tuples color, a function to add
+custom foreground/background color to strings
