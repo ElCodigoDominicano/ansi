@@ -5,8 +5,9 @@ constants for various uses to spice up your terminal !
 this dataclass can be used as-is without the other two files
 can be imported into your own projects.
 
-NOTE: Some colors might, might not display properly (or none at all even)
-that is dependant on your terminal/command prompt.
+NOTE: Some colors might, might not display properly
+(or none at al) that is dependant on your terminal/command 
+prompt, operating system of choice.
 
 Author: AERivas
 Date: 07/11/2023
