@@ -2,8 +2,9 @@
 (colors and text formatters such as blink and underline) 
 constants for various uses to spice up your terminal !
 
-NOTE: Some colors might, might not display properly (or none at all even)
-that is dependant on your terminal/command prompt.
+NOTE: Some colors might, might not display properly
+(or none at al) that is dependant on your terminal/command 
+prompt Operating System of choice.
 
 Author: AERivas
 Date: 07/11/2023
