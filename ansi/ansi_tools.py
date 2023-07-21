@@ -1,6 +1,6 @@
-""" Toolage for use with AnsiColors used for various 
-datatypes and meant to add that missing visual spice 
-to terminal/command prompt.
+""" Toolage for use with the Ansi Dataclass which contains 100s of ansi colors
+add color to various strings, and items stored in collectiona using, ANSI Escape 
+Sequences for Terminals/Command Prompts using built-in python modules/libraries.
 
 Author: AERivas
 Data: 07/11/2023
