@@ -1,10 +1,13 @@
-"""a module containing shades of color in ansi escape sequences 
-(colors and text formatters such as blink and underline) 
-constants for various uses to spice up your terminal !
+"""AnsiShades, a dataclass containing several shades of color in the form of
+ansi escape sequences (colors and text formatters such as blink and underline) 
+for various uses to spice up your terminal/command prompt !
+
+**this dataclass can be used as-is without the other two files
+can be imported into your own projects.
 
 NOTE: Some colors might, might not display properly
 (or none at al) that is dependant on your terminal/command 
-prompt Operating System of choice.
+prompt, operating system of choice.
 
 Author: AERivas
 Date: 07/11/2023
