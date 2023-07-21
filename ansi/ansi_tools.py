@@ -1,12 +1,13 @@
-""" Toolage for use with the Ansi Dataclass which contains 100s of ansi colors
-add color to various strings, and items stored in collectiona using, ANSI Escape 
-Sequences for Terminals/Command Prompts using built-in python modules/libraries.
+""" Toolage, and usage examples for use with the Ansi/AnsiShades Dataclass which 
+contains 100s of ansi colors, add color to various strings, and items stored in 
+collections using ANSI Escape Sequences for Terminals/Command Prompts using 
+built-in python modules/libraries. no external 3rd party module/libraries.
 
 Author: AERivas
 Data: 07/11/2023
 """
-from dataclasses import dataclass
 from ansi import Ansi
+from dataclasses import dataclass
 from typing import Dict, Generic, Set, Tuple, TypeVar, List
 
 T = TypeVar('T')
