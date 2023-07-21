@@ -62,12 +62,7 @@ class AnsiTools(Ansi):
         Author: AERivas
         Date: 07/11/2023
         """
-        return " ".join([
-            self.__dict__[key] 
-            + astring 
-            + self.END_COLOR 
-            for key in self.__dict__.keys() if color == key.lower()
-        ])
+        return " ".join([self.__dict__[key] + astring + self.END_COLOR for key in self.__dict__.keys() if color == key.lower()])
         
     def to_this_collection(self, data: DataContainer[T],  color: str, color_2: str="bright_green") -> DataContainer[T]:
         """Returns a collection of with color added to its items provided the
@@ -160,8 +155,8 @@ class AnsiTools(Ansi):
 def main():
     give_color = AnsiTools()
 
-    text = "Just another day in-between two quotes"
-    print(give_color.to_this_string(text, "bright_yellow"))
+    text = "Latin phrase of the day: Que Lo Que!"
+    print(give_color.to_this_string(text, "bright_blue"))
 
     alist = DataContainer([
         "a-trac",
@@ -193,35 +188,22 @@ def main():
         "White"
     ))
     
-    print(f"""
-          Heres a list => {alist.collection_type}.
-          Heres a dict {adict.collection_type}.
-          Heres a set {aset.collection_type}.
-          Heres a tuple {atuple.collection_type}.
-    """)
-    
     color_list = give_color.to_this_collection(alist, "bright_yellow")
     color_dict = give_color.to_this_collection(adict, "dark_green", "bright_green")
     color_set = give_color.to_this_collection(aset, "red")
     color_tuple = give_color.to_this_collection(atuple, "purple")
     
-    print(f"""
-          Heres a colored_list => {color_list}.
-          Heres a colored_dict => {color_dict}.
-          Heres a colored_set => {color_set}.
-          Heres a colored_tuple => {color_tuple}.
-    """)
+    for item in color_list.collection_type:
+        print(item)
     
-    for x in color_list.collection_type:
-        print(x)
-    
-    for k, v in color_dict.collection_type.items():
-        print(k, v)
+    for item in color_dict.collection_type:
+        print(item, color_dict.collection_type[item])
         
-    for x in color_set:
-        print(x)
+    for item in color_set.collection_type:
+        print(item)
     
-    for x in color_tuple:
-        print(x)
+    for item in color_tuple.collection_type:
+        print(item)
+
 if __name__ == '__main__':
     main()
